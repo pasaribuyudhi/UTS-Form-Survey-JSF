@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:h="http://java.sun.com/jsf/html"
+	
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<h:head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible" />
+    <h:outputStylesheet library="css" name="bootstrap.min.css" />
+    <title>Survey Siswa</title>
+    <style type="text/css">
+        .col-xs-updated {        
+            width: 92% !important;
+        }
+    </style>
+</h:head>
+<h:body>
+    <div class="container">
+    
+    <h1><center>KELOMPOK 3</center></h1>
+    <nav class="navbar navbar-inverse">
+	
+		<ul class="nav navbar-nav">
+		  <li><a href="#" class="navbar-brand">Tugas 1</a></li>
+		  <li><a href="#" class="navbar-brand">Survey Siswa</a></li>
+		</ul>
+	  
+	  </nav>
+    
+    
+    
+        <form>
+        <div class="row">
+            <div class="col-xs-12 col-xs-updated">
+                <h:form id="studentForm" styleClass="form-horizontal">
+                 <div class="form-row">
+                 	<div class="form-group col-md-6" >
+	                    <h:outputLabel value="Nama Depan" />
+	                    <h:inputText value="#{studentBean.firstName}" styleClass="form-control" />
+	                </div>
+                    <div class="form-group col-md-6">
+                        <h:outputLabel value="Nama Belakang"  />
+                        <h:inputText value="#{studentBean.lastName}" styleClass="form-control" />
+                    </div>
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                       <h:outputLabel value="Alamat" />
+                       <h:inputText value="#{studentBean.standard}" styleClass="form-control" />
+                    </div>
+					
+                     <div class="form-group col-md-6">
+                        <h:outputLabel value="Kota" styleClass="control-label col-sm-2" />
+                        <h:inputText value="#{studentBean.kota}" styleClass="form-control" />
+                    </div>
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <h:outputLabel value="Provinsi" />
+                        <h:inputText value="#{studentBean.provinsi}" styleClass="form-control" />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <h:outputLabel value="Negara" />
+                        <h:inputText value="#{studentBean.negara}" styleClass="form-control" />
+                    </div>
+                    <div class="form-group col-md-2">
+                       <h:outputLabel value="Kode Pos" />
+                       <h:inputText value="#{studentBean.pos}" styleClass="form-control" />
+                     </div>
+                    </div>
+                    
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <h:outputLabel value="Nomor Telepon"  />
+                        <h:inputText value="#{studentBean.nomorTelepon}" styleClass="form-control" />
+                    </div>
+                    </div>
+                    
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <h:outputLabel value="Email"  />
+                        <h:inputText value="#{studentBean.email}" styleClass="form-control" />
+                     </div>
+                    </div>
+                    
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <h:outputLabel value="Date" />
+                            <h:inputText value="#{studentBean.date}" styleClass="form-control">
+                            </h:inputText>
+
+                    </div>
+                    </div>
+                   
+                   <div class="form-row">
+                    <div class="form-group">
+                        <h:outputLabel value="Favorit" styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectBooleanCheckbox value="#{employeeBean.favorit} "/>
+                     	<h:outputLabel value="Siswa" styleClass="control-label col-sm-0" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectBooleanCheckbox value="#{employeeBean.favorit} "/>
+                     	<h:outputLabel value="Lokasi" styleClass="control-label col-sm-0" />
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectBooleanCheckbox value="#{employeeBean.favorit} "/>
+                     	<h:outputLabel value="Kampus" styleClass="control-label col-sm-0" />
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectBooleanCheckbox value="#{employeeBean.favorit} "/>
+                     	<h:outputLabel value="Suasana" styleClass="control-label col-sm-0" />
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectBooleanCheckbox value="#{employeeBean.favorit} "/>
+                     	<h:outputLabel value="Kamar Asrama" styleClass="control-label col-sm-0" />
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectBooleanCheckbox value="#{employeeBean.favorit} "/>
+                     	<h:outputLabel value="Olahraga" styleClass="control-label col-sm-0" />
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h:outputLabel value="Tertarik"  styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectOneRadio value="#{employeeBean.interest}" required="true">
+                        <f:selectItem itemLabel="Teman" itemValue="male" />
+                        </h:selectOneRadio>
+                     	</div>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectOneRadio value="#{employeeBean.interest}" required="true">
+                        <f:selectItem itemLabel="Televisi" itemValue="male" />
+                        </h:selectOneRadio>
+                     	</div>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectOneRadio value="#{employeeBean.interest}" required="true">
+                        <f:selectItem itemLabel="Internet" itemValue="male" />
+                        </h:selectOneRadio>
+                     	</div>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel value=" " styleClass="control-label col-sm-2" />
+                    	<div class="col-sm-10">
+                        <h:selectOneRadio value="#{employeeBean.interest}" required="true">
+                        <f:selectItem itemLabel="Lainnya" itemValue="male" styleClass="form-check-label"/>
+                        </h:selectOneRadio>
+                     	</div>
+                    </div>
+                    
+                    <div class="form-row">
+                    <div class="col-form-label col-sm-2 pt-5">
+                        <h:outputLabel value="Pilih Unchdeep?" />
+                    </div>	
+                    	<div class="col-sm-10">
+                    	<div class="form-check">
+                        <h:selectOneMenu label="rekomendasi" value="#{employeeBean.rekomendasi}" styleClass="btn btn-primary dropdown-toggle">
+				            <f:selectItem itemLabel="Sangat Mungkin" itemValue="accounts" />
+				            <f:selectItem itemLabel="Mungkin" itemValue="sales" />
+				            <f:selectItem itemLabel="Tidak Mungkin" itemValue="marketing" />
+          				</h:selectOneMenu>
+          				</div>
+                     	</div>
+                    </div>
+                    
+                    <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <h:outputLabel value="Pesan" />
+                    
+                            <h:inputTextarea value="#{studentBean.pesan}" styleClass="form-control">
+                            </h:inputTextarea>
+                    
+                    </div>  
+                    </div>  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+        
+                  
+                    <div class="form-row">
+                        <div class="form-group col-md-1">
+                            <h:commandButton value="Kirim" action="#{studentBean.createStudentForm}" styleClass="btn btn-success" />
+                        </div>
+                        <div class="form-group col-md-1">
+                        	<h:commandButton value="Batal" action="#{studentBean.#}" styleClass="btn btn-danger" />
+                        </div>
+                        
+              		</div>
+                </h:form>
+            </div>
+        </div>
+        </form>
+        <div class="navbar navbar-inverse">
+      	<div class="navbar">© 2020 Copyright: ORYZA</div>
+  		</div>
+    </div>
+
+</h:body>
+
+
+
+</html>
